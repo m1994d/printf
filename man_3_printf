@@ -1,0 +1,97 @@
+.\" Hello there! this file is -man_3_printf.3- nroff source.
+.\" 
+.\" This man page was made by: C18 Daniel Lopez
+.\"                            C18 Marlon Diaz
+.\" Made as a mandatory proyect for Holberton School Col.
+.\" July , 2022. 
+.\"
+.TH _Printf 3 2022-03-22 "@Danielxxdxdxd & @m1994d" "Manual of _Printf"
+.SH NAME
+_printf - writes output to standard output. 
+.SH SYNOPSIS 
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+.B _printf
+writes output to standard output.
+The function writes under the control of a format string that specifies how consecutive arguments (accessed via the variable-length facilities of stdarg) are converted for output.
+.SH OPTIONS
+ Assuming all the .c dependencies have been installed, you can use a '%' then a conversion specifier.
+ You have this options:
+.TP
+.B -d
+.I The d argument is convert to char for decimal notation.
+.TP
+.B -i
+.I The i argument ic convert to char for integer notation.
+.TP
+.B -o
+.I The unsigned int argument is converted to octal.
+.TP
+.B -u
+.I The unsigned int argument is converted to unsigned decimal.
+.TP
+.B -x
+.I The unsigned int argument is converted to lowercase hexadecimal.
+.TP
+.B -x
+.I The unsigned int argument is converted to uppercase hexadecimal.
+.TP
+.B -c
+.I The int argument is converted to char for character notation.
+.TP
+.B -s
+.I Arguments are printed as a string.
+.TP
+.B -%
+.I A % is written. No argument is converted.
+.TP
+.B -r
+.I String arguments are printed in reverse.
+.TP
+.B -R 
+.I strings arguments are coded in ROT13.
+
+.SH FILES
+To make _printf work, you must install all .c dependences first wich are:
+.nf
+.I cases1.c
+.fi
+.nf
+.I cases2.c
+.fi
+.nf
+.I cases3.c
+.fi
+.nf
+.I get_printf_cases.c
+.fi
+.nf
+.I inigers_functions.c
+.fi
+.nf
+.I main.h
+.fi
+.I replace.c
+.nf
+.I string_functions.c
+.fi
+.SH EXAMPLE
+.nf
+int main()
+{
+    _printf("%c\n", 48);
+}
+output:
+0
+.fi
+.SH KNOWN BUGS
+.TP
+.B S
+.I The string is not printed as it should.
+.SH AUTHORS
+.B @Danielxxdxdxd
+ - github.com/Danielxxdxdxd
+.br
+.B @m1994d 
+ - github.com/m1994d
+.br
