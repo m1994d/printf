@@ -37,4 +37,4 @@ These are some prototypes in the main.h file.
 
 
 
-* Made by Jacob Agudelo, Marlon Andres Diaz and Daniel Santiago Lopez Ortigoza for Holberton School .- Project Printf
+* Made by Jacob Agudelo, Marlon Andres Diaz and Daniel Santiago Lopez O. for Holberton School .- Project Printf
