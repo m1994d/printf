@@ -28,6 +28,5 @@ int (*get_func(const char *format))(va_list)
 		if (*format == *(tp[cn].t))
 			return (tp[cn].f);
 	}
-	
 	return (NULL);
 }
