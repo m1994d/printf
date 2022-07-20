@@ -1,12 +1,11 @@
 .\" Hello there! this file is -man_3_printf.3- nroff source.
 .\" 
-.\" This man page was made by: C18 Daniel Santiago Lopez Ortigoza
-.\"                            C18 Marlon Andres Diaz Suarez
+.\" This man page was made by: C18 Marlon Andres Diaz Suarez
 .\"                            C18 Jacob Agudelo
 .\" Made as a mandatory proyect for Holberton School Col.
 .\" July , 2022. 
 .\"
-.TH _Printf 3 2022-07-00 "@Danielxxdxdxd, @R-andyr & @m1994d" "Manual of _Printf"
+.TH _Printf 3 2022-07-00 "@R-andyr & @m1994d" "Manual of _Printf"
 .SH NAME
 _printf - writes output to standard output. 
 .SH SYNOPSIS 
@@ -92,9 +91,6 @@ output:
 .SH AUTHORS
 .B @R-andyr
  - https://www.github.com/R-andyr
-.br
-.B @Danielxxdxdxd
- - https://www.github.com/Danielxxdxdxd
 .br
 .B @m1994d 
  - https://www.github.com/m1994d
