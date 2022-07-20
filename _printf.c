@@ -8,25 +8,25 @@
 int _printf(const char *format, ...)
 {
 	va_list arg;
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0, a = 0;
 	int (*f)(va_list);
 
 	if (!format || !*format)
 		return (-1);
 
 	va_start(arg, format);
-	while (format[j])
+	while (format[a])
 	{
-		if (format[j] == '%')
+		if (format[a] == '%')
 		{
-			j++;
-			if (format[j] != '%' && format[j] != 'd'
-			&& format[j] != 'i' && format[j] != 'c'
-			&& format[j] != 's' && format[j] != 'b'
-			&& format[j] != 'u' && format[j] != 'o'
-			&& format[j] != 'x' && format[j] != 'X')
+			a++;
+			if (format[a] != '%' && format[j] != 'd'
+			&& format[a] != 'i' && format[j] != 'c'
+			&& format[a] != 's' && format[j] != 'b'
+			&& format[a] != 'u' && format[j] != 'o'
+			&& format[a] != 'x' && format[j] != 'X')
 			{
-				if (format[j - 1] == '%' && format[j] == '\0')
+				if (format[a - 1] == '%' && format[a] == '\0')
 					return (-1);
 
 				i = i + _putchar(format[j - 1]);
@@ -40,10 +40,10 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(format[j]);
+			_putchar(format[a]);
 			i++;
 		}
-		j++;
+		a++;
 	}
 	va_end(arg);
 	return (i);

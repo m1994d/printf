@@ -8,18 +8,18 @@ int print_undec(va_list arg)
 {
 	unsigned int num;
 	char *str;
-	int i = 0;
+	int j = 0;
 
 	num = va_arg(arg, unsigned int);
 	str = converter(num, 10, false);
 	if (str == NULL)
 		return (0);
-	while (str[i])
+	while (str[j])
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(str[j]);
+		j++;
 	}
-	return (i);
+	return (j);
 }
 
 /**
@@ -31,18 +31,18 @@ int print_oct(va_list arg)
 {
 	unsigned int num;
 	char *str;
-	int i = 0;
+	int j = 0;
 
 	num = va_arg(arg, unsigned int);
 	str = converter(num, 8, false);
 	if (str == NULL)
 		return (0);
-	while (str[i])
+	while (str[j])
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(str[j]);
+		j++;
 	}
-	return (i);
+	return (j);
 }
 
 /**

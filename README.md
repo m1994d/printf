@@ -18,19 +18,19 @@ The image below shows some of the output cases.
 
 ![image](https://user-images.githubusercontent.com/98775997/160310162-7566c794-2765-4ff1-bbc0-0b9b2bc246e8.png)
 
-we created a structure
+we created a structure.
 
 ![image](https://user-images.githubusercontent.com/98775997/160310474-16ed8463-a182-44b5-ba67-7be412638d16.png)
 
-And a function to call the arguments
+And a function to call the arguments.
 
 ![image](https://user-images.githubusercontent.com/98775997/160310739-236287f0-5fc9-4e89-97a5-5f8da86a8c7d.png)
 
-Also the function for each specifier
+Also the function for each specifier.
 
 ![image](https://user-images.githubusercontent.com/98775997/160310900-dce5984b-8200-49f6-a575-cf4bfd49a85f.png)
 
-These are some prototypes in the main.h file
+These are some prototypes in the main.h file.
 
 
 ![image](https://user-images.githubusercontent.com/98775997/160311462-1f907635-cb72-4513-820e-9b7b269203ed.png)

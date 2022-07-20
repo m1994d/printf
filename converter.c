@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * converter - function to convert string
- * @num: parameter nnumber
- * @base: parameter base
- * @upp: uppercase
+ * converter - function to convert string.
+ * @num: parameter number.
+ * @base: parameter base.
+ * @upp: uppercase.
  * Return: char*
  */
 char *converter(unsigned long int num, int base, bool upp)

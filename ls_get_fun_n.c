@@ -18,7 +18,7 @@ int _print_int(va_list arg)
 
 /**
  * _printdec - function that print decimal
- * @arg: decimal argument
+ * @arg: decimal argument.
  * Return: 0
  */
 

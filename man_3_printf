@@ -87,7 +87,7 @@ output:
 .SH KNOWN BUGS
 .TP
 .B S
-.I The string is not printed as it should.
+.I  The string is not printed as it should.
 .SH AUTHORS
 .B @R-andyr
  - https://www.github.com/R-andyr

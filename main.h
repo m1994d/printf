@@ -9,10 +9,10 @@
 #include <stdarg.h>
 
 /**
- *  *struct print - Estruct
- *   *@tp: format
- *    *@f: function
- *     */
+ * struct print - Estruct
+ * @tp: format
+ * @f: function
+ */
 typedef struct print
 {
 	char *t;
