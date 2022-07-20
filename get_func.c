@@ -20,6 +20,7 @@ int (*get_func(const char *format))(va_list)
 		{"X", print_HEX},
 		{NULL, NULL},
 	};
+	
 	int cn = 0;
 
 	for (; tp[cn].t; cn++)
@@ -27,6 +28,5 @@ int (*get_func(const char *format))(va_list)
 		if (*format == *(tp[cn].t))
 			return (tp[cn].f);
 	}
-
 	return (NULL);
 }
