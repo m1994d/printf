@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * _printdec - function that print decimal
- * @arg: decimal argument.
- * Return: 0
- */
+ **
+ ** 
+ **/
 
-int _printdec(va_list arg)
+int _printfDEC(va_list va_printf)
 {
-	int str, number, size = 1, result;
+    int str, number, size = 1, result;
 
-    str = va_arg(arg, int);
+    str = va_arg(va_printf, int);
 
     if (str < 0)
     {
-        _putchar('-');
+        _printchar('-');
         str = str * -1;
     }
 
@@ -28,7 +27,7 @@ int _printdec(va_list arg)
 
     while (size >= 1)
     {
-        result += _putchar(((number / size) % 10) + '0');
+        result += _printchar(((number / size) % 10) + '0');
         size = size / 10;
     }
     return (result);

@@ -1,26 +1,23 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
-#include <stdarg.h>
-#include <stdlib.h>
 #include <unistd.h>
-#include <stdbool.h>
+#include <stdlib.h>
+#include <limits.h>
 #include <stdarg.h>
 
-/**
- * struct print - Estruct
- * @tp: format
- * @f: function
- */
-typedef struct print
+typedef struct operator
 {
-	char *t;
+	char *string;
 	int (*f)(va_list);
-} specifier;
+} oper;
 
-int _putchar(char c);
+int _printchar(char f);
 int _printf(const char *format, ...);
-int _printdec(va_list arg);
+int _printfCH(va_list va_printf);
+int _printfDEC(va_list va_printf);
+int _printfSTR(va_list va_printf);
+int (*get_function(const char *format))(va_list);
 
-#endif /*_MAIN_H*/
+#endif /*MAIN_H*/

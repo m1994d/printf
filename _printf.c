@@ -1,51 +1,47 @@
 #include "main.h"
 
 /**
- * _printf - function that print accord the format
- *@format: string to print
- *Return: i
- */
+ ** _printf - funcion print in console
+ ** @format: string to print
+ ** Return: 0
+ **/
+
 int _printf(const char *format, ...)
 {
-	va_list arg;
-	unsigned int i = 0, a = 0, j = 0;
-	int (*f)(va_list);
-	char letter_for_functions[2] = {'i', 'd'};
+    va_list va_printf;
+    int buf = 0, ch = 0;
 
-	if (!format || !*format)
-		return (-1);
+    if (!format || !*format)
+        return (-1);
+    
+    va_start(va_printf, format);
 
-	va_start(arg, format);
-	while (format[a])
-	{
-		if (format[a] == '%')
-		{
-			for(j = 0; j >= 9; j++)
-			{
-				if (format[a + 1] == letter_for_functions[j])
-				{
-					f = get_func(&format[a]);
-					i = i + f(arg);
-				}
-			}
+    for (; format[ch]; ch++, buf++)
+    {
+        if (format[ch] == '%')
+        {
+            if (format[ch + 1] == '%')
+            {
+                _printchar(format[ch]);
+                ch++;
+            }
 
-			if (format[a + 1] == '%')
-			{
-				_putchar(format[a]);
-				i++;
-			}
+            else if (format[ch + 1] == 'c' || format[ch + 1] == 's'
+            || format[ch + 1] == 'd' || format[ch + 1] == 'i')
+            {
+                buf += get_function(&format[ch + 1])(va_printf);
+                ch++;
+            }
 
-			else if (format[a + 1] == '\0')
+            else if (format[ch + 1] == '\0')
                 return (-1);
-		}
-		
-		else
-		{
-			_putchar(format[a]);
-			i++;
-		}
-		a++;
-	}
-	va_end(arg);
-	return (i);
+
+            else
+                buf += _printchar(format[ch]);
+        }
+        else
+            _printchar(format[ch]);
+    }
+    va_end(va_printf);
+    return (buf);
 }
