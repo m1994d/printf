@@ -11,7 +11,7 @@ int (*get_func(const char *format))(va_list)
 		{"c", _printch},
 		{"s", _printstr},
 		{"%", _printpercent},
-		{"i", _print_int},
+		{"i", _printdec},
 		{"d", _printdec},
 		{"b", print_bin},
 		{"u", print_undec},
