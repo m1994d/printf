@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdarg.h>
+#include <limits.h>
 
 /**
  * struct print - Estruct
