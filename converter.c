@@ -20,6 +20,7 @@ char *converter(unsigned long int num, int base, bool upp)
 	{
 		r = "0123456789abcdef";
 	}
+
 	ptr = &buffer[49];
 	*ptr = '\0';
 	do {
