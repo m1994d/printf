@@ -5,7 +5,7 @@
  ** 
  **/
 
-int _printfDEC(va_list va_printf)
+int _printf_decimal(va_list va_printf)
 {
     int str, number, size = 1, result;
 

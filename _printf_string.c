@@ -5,7 +5,7 @@
  ** 
  **/
 
-int _printfSTR(va_list va_printf)
+int _printf_string(va_list va_printf)
 {
     char *str;
     int ch = 0;

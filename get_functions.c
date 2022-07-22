@@ -9,10 +9,15 @@
 int (*get_function(const char *format))(va_list)
 {
 	oper op[] = {
-		{"c", _printfCH},
-		{"s", _printfSTR},
-		{"d", _printfDEC},
-		{"i", _printfDEC},
+		{"c", _printf_character},
+		{"s", _printf_string},
+		{"d", _printf_decimal},
+		{"i", _printf_decimal},
+		{"b", _printf_binary},
+		{"u", _printf_undecimal},
+		{"o", _printf_octal},
+		{"x", _print_hexadecimal},
+		{"X", _print_Hexa_Alfa},
 		{NULL, NULL},
 	};
 	int a = 0;
