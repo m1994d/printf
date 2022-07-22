@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list arg;
 	unsigned int i = 0, a = 0, j = 0;
 	int (*f)(va_list);
-	char letter_for_functions[9] = {'i', 'd', 'c', 's', 'b', 'u', 'o', 'x', 'X'};
+	char letter_for_functions[2] = {'i', 'd'};
 
 	if (!format || !*format)
 		return (-1);

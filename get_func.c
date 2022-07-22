@@ -7,17 +7,9 @@
  */
 int (*get_func(const char *format))(va_list)
 {
-	specifier tp[] = {
-		{"c", _printch},
-		{"s", _printstr},
-		{"%", _printpercent},
+	specifier tp[] = {,
 		{"i", _printdec},
 		{"d", _printdec},
-		{"b", print_bin},
-		{"u", print_undec},
-		{"o", print_oct},
-		{"x", print_hex},
-		{"X", print_HEX},
 		{NULL, NULL},
 	};
 
