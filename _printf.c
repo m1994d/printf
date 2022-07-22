@@ -9,7 +9,8 @@
 int _printf(const char *format, ...)
 {
     va_list va_printf;
-    int buf = 0, ch = 0;
+    int buf = 0, ch = 0, j = 0;
+    char letters_for_functions[4] = {'d', 'i', 'c', 's'};
 
     if (!format || !*format)
         return (-1);
@@ -20,16 +21,19 @@ int _printf(const char *format, ...)
     {
         if (format[ch] == '%')
         {
+            for(j = 0; letters_for_functions[j]; j++)
+            {
+                if (format[ch + 1] == letters_for_functions[j])
+                {
+                    ch++;
+                    buf += get_function(&format[ch])(va_printf);
+                    ch++;
+                }
+            }
+
             if (format[ch + 1] == '%')
             {
                 _printchar(format[ch]);
-                ch++;
-            }
-
-            else if (format[ch + 1] == 'c' || format[ch + 1] == 's'
-            || format[ch + 1] == 'd' || format[ch + 1] == 'i')
-            {
-                buf += get_function(&format[ch + 1])(va_printf);
                 ch++;
             }
 
