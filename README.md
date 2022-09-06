@@ -37,4 +37,4 @@ And a function to call the arguments.
 
 
 
-* Made by Jacob Agudelo, Marlon Andres Diaz and Daniel Santiago Lopez O. for Holberton School .- Project Printf
+* Made by Marlon Andres Diaz. - Project Printf
